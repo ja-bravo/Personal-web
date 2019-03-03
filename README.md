@@ -1,1 +1,1 @@
-# Personal-web
+# Personal website and portfolio of sorts
