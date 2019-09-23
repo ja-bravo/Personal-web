@@ -2,7 +2,9 @@ import React from 'react';
 import SEO from '../components/seo';
 import Container from '../components/mainPage/components/container';
 import Header from '../components/mainPage/header';
-import Projects from '../components/mainPage/projects';
+import Projects from '../components/mainPage/personalProjects';
+import CompanyProjects from '../components/mainPage/companyProjects';
+import About from '../components/mainPage/about';
 
 const MainPage = () => {
   return (
@@ -10,7 +12,9 @@ const MainPage = () => {
       <SEO title="Portfolio" />
 
       <Header />
-      {/* <Projects /> */}
+      <Projects />
+      <CompanyProjects />
+      <About />
     </Container>
   );
 };

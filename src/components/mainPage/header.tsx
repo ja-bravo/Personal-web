@@ -56,10 +56,11 @@ const Header = () => {
           </Title>
           <Subtitle>I'm a full-stack developer and this is a work in progress.</Subtitle>
 
-          {/* <Link to="projects" spy={true} smooth={true} duration={500}>
-              <Button centered onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-                View my work <Icon name="arrow-right" className={isHovered ? 'isHovered' : undefined} />
-              </Button> */}
+          <Link to="projects" spy={true} smooth={true} duration={500}>
+            <Button centered onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+              View my work <Icon name="arrow-right" className={isHovered ? 'isHovered' : undefined} />
+            </Button>
+          </Link>
         </Col>
       </Row>
     </Wrapper>
