@@ -16,6 +16,11 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
 
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    height: 100%;
+    min-height: 90vh;
+  }
+
   .topSVG {
     position: absolute;
     transform: rotate(180deg);
