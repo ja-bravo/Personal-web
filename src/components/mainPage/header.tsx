@@ -6,6 +6,8 @@ import colours from '../../utils/colours';
 import Button from './components/button';
 import FA from 'react-fontawesome';
 import { Link } from 'react-scroll';
+
+// @ts-ignore
 import SVG from '../../../content/assets/web_developer.svg';
 
 const Wrapper = styled.div`
@@ -100,7 +102,7 @@ const Header = () => {
           <Title>
             Hello, I'm <Underlined>Jose Bravo.</Underlined>
           </Title>
-          <Subtitle>I'm a full-stack developer and this is a work in progress.</Subtitle>
+          <Subtitle>I'm a full-stack developer.</Subtitle>
 
           <Link to="projects" spy={true} smooth={true} duration={500} containerId="container">
             <Button centered onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
