@@ -7,19 +7,29 @@ import { Element } from 'react-scroll';
 import Project from './components/project';
 
 const Wrapper = styled.div`
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: white;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    height: initial;
+    min-height: 90vh;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 3rem;
   text-shadow: rgba(255, 255, 255, 0.15) 0px 5px 35px;
   letter-spacing: 0.025em;
-  color: #fff;
+  color: ${colours.background};
   margin: 0.5rem 0px 2rem;
+  text-align: center;
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const Underlined = styled.span`
@@ -36,7 +46,7 @@ const PersonalProjects = () => {
               <Underlined>On my own</Underlined>
             </Title>
 
-            <Row full spaceBetween wrap>
+            <Row full spaceBetween wrapContent>
               <Project
                 url="https://github.com/ja-bravo/React-A-Star-with-Hooks"
                 from="#f06449"

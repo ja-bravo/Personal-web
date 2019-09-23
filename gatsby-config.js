@@ -76,5 +76,13 @@ module.exports = {
     },
     'gatsby-plugin-typescript',
     'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /content\/assets/, // See below to configure properly
+        },
+      },
+    },
   ],
 };

@@ -12,6 +12,18 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    height: initial;
+    min-height: 100vh;
+    padding-top: 50px;
+  }
+
+  .botSVG {
+    position: absolute;
+    top: 0;
+  }
 `;
 
 const Title = styled.h1`
@@ -20,8 +32,11 @@ const Title = styled.h1`
   letter-spacing: 0.025em;
   color: #fff;
   margin: 0.5rem 0px 2rem;
+  text-align: center;
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 2rem;
+  }
 `;
-
 const Underlined = styled.span`
   border-bottom: 2px solid ${colours.primary};
 `;
@@ -30,13 +45,16 @@ const CompanyProjects = () => {
   return (
     <Element name="companyProjects">
       <Wrapper>
+        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" className="botSVG">
+          <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+        </svg>
         <Row>
           <Col full>
             <Title>
               <Underlined>With my company</Underlined>
             </Title>
 
-            <Row full spaceBetween wrap>
+            <Row full spaceBetween wrapContent>
               <Project
                 url="https://uniphi.ie/"
                 from="#ad5389"

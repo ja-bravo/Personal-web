@@ -5,6 +5,7 @@ import Col from './components/column';
 import colours from '../../utils/colours';
 import { Element } from 'react-scroll';
 import SocialIcon from './components/socialIcon';
+import { useInView } from 'react-intersection-observer';
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -12,6 +13,21 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  .detail {
+    width: 0.1%;
+    height: 500px;
+    background: linear-gradient(to right, #1c92d2 0%, #151922 100%);
+    position: absolute;
+    left: 0;
+    transform: skewY(25deg);
+    z-index: 1;
+    transition: all 0.3s;
+
+    &.inView {
+      width: 100%;
+    }
+  }
 `;
 
 const Title = styled.h1`
@@ -20,6 +36,11 @@ const Title = styled.h1`
   letter-spacing: 0.025em;
   color: #fff;
   margin: 0.5rem 0px 2rem;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 `;
 
 const Subtitle = styled.span`
@@ -30,6 +51,10 @@ const Subtitle = styled.span`
   color: #e2e8f0;
   margin: 0.5rem 0px 2rem;
   text-align: left;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Underlined = styled.span`
@@ -37,17 +62,19 @@ const Underlined = styled.span`
 `;
 
 const About = () => {
+  const [ref, inView, entry] = useInView({ threshold: 0 });
   return (
     <Element name="about">
       <Wrapper>
-        <Row>
+        <div className={`detail ${inView && 'inView'}`} ref={ref}></div>
+        <Row style={{ zIndex: 300 }}>
           <Col full>
             <Title>
               <Underlined>About me</Underlined>
             </Title>
 
             <Subtitle>
-              <p>Nerd with a passion for building stuff. I love technology and everything around it</p>
+              <p>Nerd with a passion for building stuff. I love technology and everything around it.</p>
 
               <p>
                 Currently employed as the Technical Lead/Lead Developer for{' '}

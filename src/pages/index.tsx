@@ -8,7 +8,7 @@ import About from '../components/mainPage/about';
 
 const MainPage = () => {
   return (
-    <Container>
+    <Container id="container">
       <SEO title="Portfolio" />
 
       <Header />

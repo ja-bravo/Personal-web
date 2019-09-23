@@ -6,12 +6,48 @@ import colours from '../../utils/colours';
 import Button from './components/button';
 import FA from 'react-fontawesome';
 import { Link } from 'react-scroll';
+import SVG from '../../../content/assets/web_developer.svg';
 
 const Wrapper = styled.div`
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .topSVG {
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 0;
+  }
+
+  .detail {
+    position: absolute;
+    right: 5%;
+    width: 400px;
+    height: 400px;
+    top: 2%;
+
+    @media only screen and (max-width: 1400px) {
+      width: 300px;
+      height: 300px;
+      top: 2%;
+      right: initial;
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      width: 50%;
+      height: 50%;
+      right: initial;
+      top: -10%;
+    }
+
+    @media only screen and (max-width: 380px) {
+      width: 43%;
+      height: 43%;
+      right: initial;
+      top: -10%;
+    }
+  }
 `;
 
 const Title = styled.h1`
@@ -20,6 +56,11 @@ const Title = styled.h1`
   letter-spacing: 0.025em;
   color: #fff;
   margin: 0.5rem 0px 2rem;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 2rem;
+    text-align: center;
+  }
 `;
 
 const Subtitle = styled.span`
@@ -30,6 +71,10 @@ const Subtitle = styled.span`
   color: #e2e8f0;
   margin: 0.5rem 0px 2rem;
   text-align: center;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Underlined = styled.span`
@@ -49,6 +94,7 @@ const Header = () => {
 
   return (
     <Wrapper>
+      <SVG className="detail" />
       <Row>
         <Col>
           <Title>
@@ -56,13 +102,16 @@ const Header = () => {
           </Title>
           <Subtitle>I'm a full-stack developer and this is a work in progress.</Subtitle>
 
-          <Link to="projects" spy={true} smooth={true} duration={500}>
+          <Link to="projects" spy={true} smooth={true} duration={500} containerId="container">
             <Button centered onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
               View my work <Icon name="arrow-right" className={isHovered ? 'isHovered' : undefined} />
             </Button>
           </Link>
         </Col>
       </Row>
+      <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" className="topSVG">
+        <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+      </svg>
     </Wrapper>
   );
 };

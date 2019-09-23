@@ -1,6 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled, { createGlobalStyle } from 'styled-components/macro';
 
+const GlobalStyle = createGlobalStyle`
+  html, body {
+    color: white;
+  }
+`;
 export default function HTML(props) {
   return (
     <html {...props.htmlAttributes}>
@@ -10,6 +16,7 @@ export default function HTML(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <link href="https://use.fontawesome.com/releases/v5.11.1/css/all.css" rel="stylesheet"></link>
         {props.headComponents}
+        <GlobalStyle />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
