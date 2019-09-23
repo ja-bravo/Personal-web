@@ -52,7 +52,7 @@ const PersonalProjects = () => {
                 from="#f06449"
                 to="rgb(251, 176, 59)"
                 title="A* Pathfinder"
-                description="A playground built with React using hooks as a learning tool for hooks and algorithms"
+                description="An A* Algorithm playground built with React using hooks as a learning tool for hooks and algorithms"
               />
 
               <Project
