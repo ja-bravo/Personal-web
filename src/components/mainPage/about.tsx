@@ -93,7 +93,7 @@ const About = () => {
               <Row full style={{ paddingTop: 0 }}>
                 <SocialIcon icon="twitter" onClick={() => window.open('https://twitter.com/josebravodev')} />
                 <SocialIcon icon="github" onClick={() => window.open('https://github.com/ja-bravo')} />
-                <SocialIcon icon="envelope" onClick={() => window.open('mailto:ja.bravo.isidro@gmail.com', '_blank')} />
+                <SocialIcon icon="envelope" onClick={() => (window.location.href = 'mailto:ja.bravo.isidro@gmail.com?subject=Portfolio')} />
               </Row>
             </Col>
           </Col>
