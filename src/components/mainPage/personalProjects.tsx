@@ -78,6 +78,14 @@ const PersonalProjects = () => {
                 title="Clifden 10k"
                 description="Website built with Gatsby for a charity 10k run in Clifden, Ireland."
               />
+
+              <Project
+                url="https://github.com/ja-bravo/personal-web"
+                from="#663299"
+                to="#48335d"
+                title="This website"
+                description="This very website. Built with Gatsby, deployed on Netlify."
+              />
             </Row>
           </Col>
         </Row>
