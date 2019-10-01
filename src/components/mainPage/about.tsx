@@ -22,7 +22,8 @@ const Wrapper = styled.div`
     left: 0;
     transform: skewY(25deg);
     z-index: 1;
-    transition: all 0.3s;
+    transition: all 0.1s;
+    opacity: 0.5;
 
     &.inView {
       width: 100%;

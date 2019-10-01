@@ -7,7 +7,7 @@ import { Element } from 'react-scroll';
 import Project from './components/project';
 
 const Wrapper = styled.div`
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
