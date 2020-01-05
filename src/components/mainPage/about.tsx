@@ -13,22 +13,6 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  .detail {
-    width: 0.1%;
-    height: 500px;
-    background: linear-gradient(to right, #1c92d2 0%, #151922 100%);
-    position: absolute;
-    left: 0;
-    transform: skewY(25deg);
-    z-index: 1;
-    transition: all 0.1s;
-    opacity: 0.5;
-
-    &.inView {
-      width: 100%;
-    }
-  }
 `;
 
 const Title = styled.h1`
@@ -67,7 +51,6 @@ const About = () => {
   return (
     <Element name="about">
       <Wrapper>
-        <div className={`detail ${inView && 'inView'}`} ref={ref}></div>
         <Row style={{ zIndex: 300 }}>
           <Col full>
             <Title>
@@ -78,7 +61,7 @@ const About = () => {
               <p>Nerd with a passion for building stuff. I love technology and everything around it.</p>
 
               <p>
-                Currently employed as the Technical Lead/Lead Developer for{' '}
+                I'm currently the Lead Developer/Technical Director for{' '}
                 <Underlined style={{ cursor: 'pointer' }} onClick={() => window.open('https://boonagency.ie', '_blank')}>
                   Boon Agency
                 </Underlined>{' '}

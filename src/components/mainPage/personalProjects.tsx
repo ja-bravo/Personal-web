@@ -36,9 +36,30 @@ const Underlined = styled.span`
   border-bottom: 2px solid ${colours.primary};
 `;
 
+const TriangleUp = styled.div`
+  width: 0;
+  height: 0;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-bottom: 100px solid white;
+  position: relative;
+  top: 1px;
+`;
+
+const TriangleDown = styled.div`
+  width: 0;
+  height: 0;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-top: 100px solid white;
+  position: relative;
+  top: -1px;
+`;
+
 const PersonalProjects = () => {
   return (
     <Element name="projects">
+      <TriangleUp />
       <Wrapper>
         <Row>
           <Col full>
@@ -86,10 +107,18 @@ const PersonalProjects = () => {
                 title="This website"
                 description="This very website. Built with Gatsby, deployed on Netlify."
               />
+              <Project
+                url="https://github.com/ja-bravo/travel-list"
+                from="#219575"
+                to="#214560"
+                title="Travel List App"
+                description="Small React Native   app that allows you to track places you want to visit and things you want to do there."
+              />
             </Row>
           </Col>
         </Row>
       </Wrapper>
+      <TriangleDown />
     </Element>
   );
 };

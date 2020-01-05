@@ -21,12 +21,6 @@ const Wrapper = styled.div`
     min-height: 90vh;
   }
 
-  .topSVG {
-    position: absolute;
-    transform: rotate(180deg);
-    bottom: 0;
-  }
-
   .detail {
     position: absolute;
     right: 5%;
@@ -116,9 +110,6 @@ const Header = () => {
           </Link>
         </Col>
       </Row>
-      <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" className="topSVG">
-        <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
-      </svg>
     </Wrapper>
   );
 };

@@ -19,11 +19,6 @@ const Wrapper = styled.div`
     min-height: 100vh;
     padding-top: 50px;
   }
-
-  .botSVG {
-    position: absolute;
-    top: 0;
-  }
 `;
 
 const Title = styled.h1`
@@ -45,9 +40,6 @@ const CompanyProjects = () => {
   return (
     <Element name="companyProjects">
       <Wrapper>
-        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" className="botSVG">
-          <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
-        </svg>
         <Row>
           <Col full>
             <Title>
