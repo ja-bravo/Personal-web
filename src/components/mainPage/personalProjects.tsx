@@ -85,9 +85,9 @@ const PersonalProjects = () => {
               />
 
               <Project
-                url="https://covid-19.booniverse.now.sh/"
-                from="#F06449"
-                to="#ef476f"
+                url="https://covid-19-sigma.now.sh"
+                from="#2193b0"
+                to="#6dd5ed"
                 title="COVID-19 Dashboard"
                 description="A COVID-19 dashboard. Built using Next.js and Amcharts"
               />
