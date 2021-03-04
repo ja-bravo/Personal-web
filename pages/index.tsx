@@ -62,7 +62,7 @@ export default function Home() {
         </Project>
 
         <Project image={'/wts.png'} title={"What's The Scòr"}>
-          <span className="text-center md:text-left  text-sm md:text-mdblock leading-tight ">
+          <span className="text-center md:text-left  text-sm md:text-md block leading-tight ">
             Realtime and results GAA system with a companion App for the Score Keepers, built with React native and Redux.
           </span>
           <span className="text-center md:text-left  text-sm md:text-md eading-tight block  mt-2 mb-2">
@@ -105,7 +105,7 @@ export default function Home() {
       <h2 className="text-4xl font-bold text-center mb-12">Tools & Languages</h2>
       <div className={'container mx-auto flex flex-row justify-around mb-8'}>
         <Tool image={'/react.png'} title={'React Native'} />
-        <Tool image={'/graphQL.png'} title={'GraphQL'} />
+        <Tool image={'/graphql.png'} title={'GraphQL'} />
         <Tool image={'/node.png'} title={'Node'} />
         <Tool image={'/next.png'} title={'GraphQL'} />
         <Tool image={'/docker.png'} title={'Docker'} />

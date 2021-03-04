@@ -16,6 +16,7 @@ const Wrapper = styled.div<{ colour: string }>`
   align-items: center;
   transition: all 0.5s;
   cursor: pointer;
+  padding: 8px;
 
   &:not(:last-child) {
     margin-right: 30px;
@@ -31,18 +32,12 @@ const Wrapper = styled.div<{ colour: string }>`
   }
 `;
 
-const Icon = styled(FontAwesomeIcon)<{ colour: string }>`
-  color: ${p => p.colour};
-  font-size: 40px;
-  transition: all 0.5s;
-`;
-
 const SocialIcon = ({ icon, onClick }) => {
   const colour = icon === 'twitter' ? '#38A1F3' : icon === 'github' ? '#333' : '#000';
   const iconName = icon === 'twitter' ? faTwitter : icon === 'github' ? faGithub : faEnvelope;
   return (
     <Wrapper colour={colour} onClick={onClick}>
-      <Icon icon={iconName} colour={colour} />
+      <FontAwesomeIcon icon={iconName} color={colour} size="1x" />
     </Wrapper>
   );
 };
