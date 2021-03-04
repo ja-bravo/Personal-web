@@ -11,10 +11,12 @@ export default function Home() {
     <div className="flex flex-col w-full overflow-x-hidden">
       <Head>
         <title>Jose Bravo</title>
+        <meta name="description" content="Full-Stack, Mobile and Machine Learning developer." />
+        <link rel="canonical" href="https://josebravo.dev" />
       </Head>
       <Screen>
         <div className="w-full flex justify-center items-center mb-12 mt-32">
-          <Image src="/developer.svg" width={550} height={300} />
+          <Image src="/developer.svg" width={550} height={300} alt={''} />
         </div>
         <h1 className="text-4xl font-bold text-center mb-4">Hey, I'm Jose Bravo.</h1>
         <h2 className="text-xl text-center">Full-Stack, Mobile and Machine Learning developer.</h2>
@@ -28,10 +30,10 @@ export default function Home() {
         </div>
       </Screen>
 
-      <img src="/topWave.svg" className="w-full scale-105 transform" />
+      <img src="/topWave.svg" className="w-full scale-105 transform" alt={''} />
       <div className="bg-gray-700 p-8 w-full">
         <div className="container mx-auto">
-          <h1 className="text-4xl font-bold mb-4">About me</h1>
+          <h2 className="text-4xl font-bold mb-4">About me</h2>
           <p className="text-lg lg:text-xl max-w-4xl mb-2">
             I’m a 26 years old Software Developer from Alicante, Spain. Currently I’m the Technical Director for Booniverse and Ourside.
           </p>
@@ -42,11 +44,10 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <img src="/bottomWave.svg" className="w-full scale-105 transform mb-24" />
+      <img src="/bottomWave.svg" className="w-full scale-105 transform mb-24" alt={''} />
 
-      <h1 className="text-4xl font-bold text-center mb-4">Projects</h1>
+      <h2 className="text-4xl font-bold text-center mb-4">Projects</h2>
       <h2 className="text-xl text-center mb-24">These are some of the projects I’ve led while working for Booniverse.</h2>
-
       <div className="container mx-auto flex flex-col mb-24">
         <Project image={'/uniphi.png'} title={'Uniphi'}>
           <span className="text-center md:text-left text-sm md:text-md block leading-tight">
@@ -101,7 +102,7 @@ export default function Home() {
         </Project>
       </div>
 
-      <h1 className="text-4xl font-bold text-center mb-12">Tools & Languages</h1>
+      <h2 className="text-4xl font-bold text-center mb-12">Tools & Languages</h2>
       <div className={'container mx-auto flex flex-row justify-around mb-8'}>
         <Tool image={'/react.png'} title={'React Native'} />
         <Tool image={'/graphQL.png'} title={'GraphQL'} />
@@ -109,7 +110,6 @@ export default function Home() {
         <Tool image={'/next.png'} title={'GraphQL'} />
         <Tool image={'/docker.png'} title={'Docker'} />
       </div>
-
       <div className={'container mx-auto flex flex-row justify-around mb-24'}>
         <Tool image={'/angular.png'} title={'Angular'} />
         <Tool image={'/aws.png'} title={'AWS'} />
@@ -118,10 +118,10 @@ export default function Home() {
         <Tool image={'/python.png'} title={'Python'} />
       </div>
 
-      <img src="/topWave.svg" className="w-full scale-105 transform" />
+      <img src="/topWave.svg" className="w-full scale-105 transform" alt={''} />
       <div className="bg-gray-700 p-8 w-full pb-24">
         <div className="container mx-auto">
-          <h1 className="text-4xl font-bold mb-12 text-center">Get in contact</h1>
+          <h2 className="text-4xl font-bold mb-12 text-center">Get in contact</h2>
           <div className="flex flex-row justify-between mr-auto ml-auto max-w-sm">
             <SocialIcon icon="twitter" onClick={() => window.open('https://twitter.com/josebravodev')} />
             <SocialIcon icon="github" onClick={() => window.open('https://github.com/ja-bravo')} />
