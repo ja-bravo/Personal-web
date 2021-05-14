@@ -9,7 +9,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <script async src="https://cdn.splitbee.io/sb.js"></script>
+        </Head>
         <body>
           <Main />
           <NextScript />
