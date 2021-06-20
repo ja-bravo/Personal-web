@@ -35,19 +35,26 @@ export default function Home() {
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold mb-4">About me</h2>
           <p className="text-lg lg:text-xl max-w-4xl mb-2">
-            I’m a 26 years old Software Developer from Alicante, Spain. Currently I’m the Technical Director for Booniverse and Ourside.
+            I'm the CTO/Co-Founder of{' '}
+            <a href="https://upourside.com" target="_blank" className="cursor-pointer underline">
+              Ourside
+            </a>{' '}
+            and CTO of{' '}
+            <a href="https://xploreapp.io" className="cursor-pointer underline" target="_blank">
+              Xplore Local.
+            </a>{' '}
           </p>
           <p className="text-lg lg:text-xl max-w-6xl">
-            In the last 5 years, I’ve worked with nation wide Irish companies such as Galwaybay FM and Connacht Tribune. As the Lead Developer of
-            Booniverse, I’ve helped bring to market apps such as Uniphi, What’s The Scòr, Xplore and SafeServe. Combined, these apps have over 100.000
-            users and bring over 500.000 € yearly.
+            In the last {new Date().getFullYear() - 2016} years, I’ve worked with nation wide Irish companies such as Galwaybay FM and Connacht
+            Tribune. As the CTO of Ourside, I’ve helped bring to market apps such as Uniphi, What’s The Scòr, Xplore and SafeServe. Combined, these
+            apps have over 100.000 users and bring over 500.000 € yearly.
           </p>
         </div>
       </div>
       <img src="/bottomWave.svg" className="w-full scale-105 transform mb-24" alt={''} />
 
       <h2 className="text-4xl font-bold text-center mb-4">Projects</h2>
-      <h2 className="text-xl text-center mb-24">These are some of the projects I’ve led while working for Booniverse.</h2>
+      <h2 className="text-xl text-center mb-24">These are some of the projects I’ve led while working for Ourside.</h2>
       <div className="container mx-auto flex flex-col mb-24">
         <Project image={'/uniphi.png'} title={'Uniphi'}>
           <span className="text-center md:text-left text-sm md:text-md block leading-tight">
@@ -94,10 +101,10 @@ export default function Home() {
             Built with React, React Native, Next.js and GraphQL.
           </span>
           <span className="text-center md:text-left  text-sm md:text-md leading-tight block max-w-4xl mb-2">
-            Enables towns to showcase their history, culture and heritage.
+            Enables towns to showcase their history, culture and heritage. Highlight local businesses and enable them to do business online.
           </span>
           <span className="text-center inline-block md:text-left  text-sm md:text-md max-w-4xl">
-            Highlight local businesses and enable them to do Click & Collect, online ticketing and Deliveries.
+            Finalist of the .ie Digital Town Awards 2021. Winner of the Best Digital Marketing Campaign at the Chamber Awards 2021.
           </span>
         </Project>
       </div>
