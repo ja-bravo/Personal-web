@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
-const Project = dynamic(() => import('../components/project'), { ssr: false });
+const Project = dynamic(() => import('../components/project'));
 
 export default function Home() {
   return (
