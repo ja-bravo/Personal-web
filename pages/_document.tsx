@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import React from 'react';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -11,7 +12,9 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <script async src="https://cdn.splitbee.io/sb.js"></script>
-          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+          <meta name="description" content="Full-Stack & App developer" />
+          <link rel="canonical" href="https://josebravo.dev" />
         </Head>
         <body>
           <Main />

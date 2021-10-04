@@ -1,4 +1,5 @@
 const plugin = require('tailwindcss/plugin');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   purge: ['./pages/**/*.tsx', './components/**/*.tsx'],
@@ -7,36 +8,21 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        serif: ['Poppins', 'ui-serif', 'Georgia', 'sans-serif'],
-        mono: ['Poppins', 'ui-monospace', 'SFMono-Regular', 'sans-serif'],
-        display: ['Poppins', 'sans-serif'],
-        body: ['Poppins', 'sans-serif'],
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        gray: {
-          50: '#F5F7FA',
-          100: '#E4E7EB',
-          200: '#CBD2D9',
-          300: '#9AA5B1',
-          400: '#7B8794',
-          500: '#616E7C',
-          600: '#52606D',
-          700: '#3E4C59',
-          800: '#323F4B',
-          900: '#1F2933',
-        },
         blue: {
-          50: '#E3F8FF',
-          100: '#B3ECFF',
-          200: '#81DEFD',
-          300: '#5ED0FA',
-          400: '#40C3F7',
-          500: '#2BB0ED',
-          600: '#1992D4',
-          700: '#127FBF',
-          800: '#0B69A3',
-          900: '#035388',
+          DEFAULT: '#3E82FC',
+          50: '#FFFFFF',
+          100: '#FFFFFF',
+          200: '#D5E4FE',
+          300: '#A2C3FE',
+          400: '#70A3FD',
+          500: '#3E82FC',
+          600: '#0C61FB',
+          700: '#034DD1',
+          800: '#023A9F',
+          900: '#02286C',
         },
       },
     },
@@ -164,6 +150,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('@tailwindcss/typography'),
     plugin(function ({ addBase, theme }) {
       addBase({
         h1: { color: 'white' },
