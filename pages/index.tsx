@@ -28,8 +28,8 @@ export default function Home() {
           focused on the web and app world.
         </p>
         <p className="text-lg md:text-xl leading-7 font-normal text-gray-500 max-w-xl mt-8 whitespace-normal md:whitespace-pre-wrap">
-          I have a passion for all things technology. I enjoy helping people and businesses achieve their goals through code. {'      '}I take pride in
-          what I build and I strive to exceed expectations.
+          I have a passion for all things technology. I enjoy helping people and businesses achieve their goals through code. I take pride in what I
+          build and I strive to exceed expectations.
         </p>
         <p className="text-lg md:text-xl leading-7 font-normal text-gray-500 max-w-xl mt-8">
           Currently, I'm the CTO of a small digital agency named{' '}

@@ -12,7 +12,6 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Inter&display=optional" rel="stylesheet" />
-          <script async src="https://cdn.splitbee.io/sb.js"></script>
           <meta name="description" content="Full-Stack & App developer" />
           <link rel="canonical" href="https://josebravo.dev" />
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
