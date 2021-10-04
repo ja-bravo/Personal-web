@@ -1,8 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import Project from '../components/project';
 import Link from 'next/link';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
+
+const Project = dynamic(() => import('../components/project'), { ssr: false });
 
 export default function Home() {
   return (
