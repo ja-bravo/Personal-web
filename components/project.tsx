@@ -14,7 +14,7 @@ const Project: React.FC<Props> = ({ url, title, desc, techs }) => {
   return (
     <li className="text-gray-500">
       <Link href={url} passHref>
-        <a className="block hover:bg-gray-50">
+        <a className="block hover:bg-gray-50" target="_blank" rel="noopener">
           <div className="px-4 py-4 flex items-center sm:px-6">
             <div className="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
               <div className="">
