@@ -91,12 +91,12 @@ export default function Home() {
         <div className="mt-8 text-gray-500 mx-auto">
           <div className="bg-white shadow overflow-hidden sm:rounded-md">
             <ul role="list" className="divide-y divide-gray-200">
-              <Project
-                title={'API Monitoring'}
-                desc={'Simple SaaS project to send an alert if an API or website is down.'}
-                techs={['/next.png', '/graphql.png', '/docker.png']}
-                url={''}
-              />
+              {/*<Project*/}
+              {/*  title={'API Monitoring'}*/}
+              {/*  desc={'Simple SaaS project to send an alert if an API or website is down.'}*/}
+              {/*  techs={['/next.png', '/graphql.png', '/docker.png']}*/}
+              {/*  url={''}*/}
+              {/*/>*/}
               <Project
                 title={'Image 2 Dices'}
                 desc={'Transform an image to a grid of dice faces using Tensorflow.js. Capstone project from the Learning TensorFlow.js book.'}
