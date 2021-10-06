@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <div className="hidden md:block absolute select-none w-[400px] h-[250px]  lg:w-[550px] lg:h-[400px] xl:w-[700px] xl:h-[600px] 2xl:w-[900px] 2xl:h-[800px] top-0 right-0">
-        <Image src="/topBlob.svg" layout={'fill'} alt={''} aria-hidden="true" />
+        <Image priority={true} src="/topBlob.svg" layout={'fill'} alt={''} aria-hidden="true" />
       </div>
       <div className="md:hidden absolute select-none w-[150px] h-[100px] transform rotate-270 -top-4 right-0">
         <Image src="/topBlob.svg" layout={'fill'} alt={''} aria-hidden="true" />
