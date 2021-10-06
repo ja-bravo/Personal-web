@@ -13,7 +13,7 @@ export default function Home() {
         <Image priority={true} src="/topBlob.svg" layout={'fill'} alt={''} aria-hidden="true" />
       </div>
       <div className="md:hidden absolute select-none w-[150px] h-[100px] transform rotate-270 -top-4 right-0">
-        <Image src="/topBlob.svg" layout={'fill'} alt={''} aria-hidden="true" />
+        <Image priority={true} src="/topBlob.svg" layout={'fill'} alt={''} aria-hidden="true" />
       </div>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 ">
         <Head>
