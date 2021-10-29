@@ -26,15 +26,15 @@ export default function Home() {
           Full Stack & App Developer
         </h1>
         <p className="text-lg md:text-xl leading-7 font-normal text-gray-500 max-w-xl mt-8">
-          Hey! I'm <span className="text-blue-600">Jose Bravo</span>, a {new Date().getFullYear() - 1995} years old software developer from Spain 🇪🇸
-          focused on the web and app world.
+          Hey! I'm <span className="text-blue-600">Jose Bravo</span>, a software developer from Spain 🇪🇸 with over {new Date().getFullYear() - 2016}{' '}
+          years of experience working in Full-Stack Web and App development.
         </p>
         <p className="text-lg md:text-xl leading-7 font-normal text-gray-500 max-w-xl mt-8 whitespace-normal md:whitespace-pre-wrap">
-          I have a passion for all things technology. I enjoy helping people and businesses achieve their goals through code. I take pride in what I
-          build and I strive to exceed expectations.
+          I'm deeply passionate about all things technology. I enjoy keeping up with the latest industry trends and helping people achieve their goals
+          through code. I take pride in what I build and strive to exceed expectations.
         </p>
         <p className="text-lg md:text-xl leading-7 font-normal text-gray-500 max-w-xl mt-8">
-          Currently, I'm the CTO of a small digital agency named{' '}
+          In my last role, I was the Co-Founder and Chief Technology Officer of a small digital agency named{' '}
           <Link passHref href="https://upourside.com">
             <a rel="noopener" target="_blank" className="text-blue-600 underline">
               Ourside
@@ -93,12 +93,12 @@ export default function Home() {
         <div className="mt-8 text-gray-500 mx-auto">
           <div className="bg-white shadow overflow-hidden sm:rounded-md">
             <ul role="list" className="divide-y divide-gray-200">
-              {/*<Project*/}
-              {/*  title={'API Monitoring'}*/}
-              {/*  desc={'Simple SaaS project to send an alert if an API or website is down.'}*/}
-              {/*  techs={['/next.png', '/graphql.png', '/docker.png']}*/}
-              {/*  url={''}*/}
-              {/*/>*/}
+              <Project
+                title={'Sentinel'}
+                desc={'API monitoring, performance tracking and status page generator.'}
+                techs={['/next.png', '/react.png', '/node.png', '/graphql.png', '/docker.png']}
+                url={'https://usesentinel.dev'}
+              />
               <Project
                 title={'Image 2 Dices'}
                 desc={'Transform an image to a grid of dice faces using Tensorflow.js. Capstone project from the Learning TensorFlow.js book.'}
@@ -166,7 +166,7 @@ export default function Home() {
 
         <h1 className="mt-32 text-blue-500 block text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl">Contact me</h1>
         <div className="mt-2 text-base max-w-prose mx-auto lg:max-w-none">
-          <p className="text-center text-lg text-gray-500">Feel free to contact me through Twitter, Github or email.</p>
+          <p className="text-center text-lg text-gray-500">Feel free to contact me through Twitter, LinkedIn, Github or email.</p>
         </div>
 
         <div className="mt-8 mb-32 mx-auto flex flex-row space-x-8 justify-center z-30">
@@ -175,7 +175,14 @@ export default function Home() {
               <Image src="/twitter.svg" objectFit="contain" width={32} height={32} alt={"Jose's Twitter"} />
             </a>
           </Link>
-          <Link passHref href="https://twitter.com/josebravodev">
+
+          <Link passHref href="https://www.linkedin.com/in/josebravodev/">
+            <a target="_blank" rel="noopener">
+              <Image src="/linkedin.png" objectFit="contain" width={32} height={32} alt={"Jose's LinkedIn"} />
+            </a>
+          </Link>
+
+          <Link passHref href="https://github.com/ja-bravo">
             <a target="_blank" rel="noopener">
               <Image src="/github.svg" objectFit="contain" width={32} height={32} alt={"Jose's Github"} />
             </a>
