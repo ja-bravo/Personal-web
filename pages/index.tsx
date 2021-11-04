@@ -60,38 +60,26 @@ export default function Home() {
           through code. I take pride in what I build and strive to exceed expectations.
         </p>
         <p className="text-lg md:text-xl leading-7 font-normal dark:text-white text-gray-500 max-w-xl mt-8">
-          In my last role, I was the Co-Founder and Chief Technology Officer of a small digital agency named{' '}
-          <Link passHref href="https://upourside.com">
-            <a rel="noopener" target="_blank" className="dark:text-blue-400 text-blue-600 underline">
-              Ourside
-            </a>
-          </Link>{' '}
-          and{' '}
-          <Link passHref href="https://xploreapp.io">
-            <a rel="noopener" target="_blank" className="dark:text-blue-400 text-blue-600 underline">
-              Xplore Local
-            </a>
-          </Link>
-          .
+          When I'm not behind a keyboard, I love travelling, running, playing guitar and hiking with my dog Alfie.
         </p>
         <h1 className="mt-32  dark:text-blue-400 text-blue-500 block text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl">
           Experience
         </h1>
         <div className="mt-8 prose prose-blue prose-lg md:prose-xl text-gray-500 mx-auto">
           <p className="dark:text-white text-gray-500">
-            In my {new Date().getFullYear() - 2016} years of experience, I have been employed at multiple roles ranging from Web Developer intern to
-            Senior Full-Stack developer to Chief Technology Officer.
+            Over the past {new Date().getFullYear() - 2016} years, I have worked in various positions including Web Developer Intern to Senior
+            Full-Stack Developer to Chief Technology Officer.
           </p>
 
           <p className="dark:text-white text-gray-500">
-            In 2019 I Co-Founded{' '}
+            In 2019 I co-founded{' '}
             <Link passHref href="https://upourside.com">
               <a rel="noopener" target="_blank" className="dark:text-blue-400 text-blue-600 underline">
                 Ourside
               </a>
-            </Link>
-            , an Ireland based digital agency with 2 partners. While in Ourside, I have led a small team of developers and designers in building
-            websites, apps and entire platforms for both clients and our own projects such as such as{' '}
+            </Link>{' '}
+            — a digital agency based in Ireland — with two business partners. During my time at Ourside, I have led a modest team of developers and
+            designers in building websites, apps and entire platforms for both our clients and our own products such as{' '}
             <Link passHref href="https://xploreapp.io">
               <a rel="noopener" target="_blank" className="dark:text-blue-400 text-blue-600 underline">
                 Xplore Local
@@ -107,13 +95,13 @@ export default function Home() {
           </p>
 
           <p className="dark:text-white text-gray-500">
-            Some of the projects I've built with Ourside have reached hundreds of thousands of users, millions of page views and have been nominated or
-            won awards in the Irish Chamber Awards and .ie Digital Town awards.
+            Some of the projects I've built with Ourside have amassed hundreds of thousands of users, gained millions of page views and received
+            national acclaim at the Irish Chamber Awards and .ie Digital Town awards.
           </p>
 
           <p className="dark:text-white text-gray-500">
             My current technological focus is building websites and apps using React, React Native, GraphQL, Next.js, Postgresql, Docker and AWS but
-            I'm always striving to learn new technologies and keeping up with new developments.
+            I'm always eager to learn new technologies and keep up with new developments in the field.
           </p>
         </div>
 
