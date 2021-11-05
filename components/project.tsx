@@ -19,7 +19,7 @@ const Project: React.FC<Props> = ({ url, title, desc, techs }) => {
             <div className="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
               <div className="">
                 <div className="flex text-sm">
-                  <p className="font-medium dark:text-blue-400 text-blue-600 truncate">{title}</p>
+                  <p className="font-medium dark:text-blue-300 text-blue-600 truncate">{title}</p>
                 </div>
                 <div className="mt-2 flex">
                   <div className="flex items-center text-sm">
